@@ -1,5 +1,4 @@
 // m-vue > src > main.js
-
 import { createApp } from "vue"
 import { createRouter, createWebHistory } from "vue-router" // 将路由的创建拿出来，每次子应用被切换的时候路由也会重新加载
 import App from "./App.vue"
@@ -34,11 +33,13 @@ if (!window.__POWERED_BY_QIANKUN__) {
 export async function bootstrap() {
   console.log("vue3 app bootstraped")
 }
+
 export async function mount(props) {
   // 参数props包含了主应用中的注册信息
   console.log("vue3 app mount", props)
   render(props)
 }
+
 export async function unmount() {
   console.log("vue3 app unmount")
   history = null // 当子应用被卸载后我们将路由等全部清空

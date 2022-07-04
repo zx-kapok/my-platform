@@ -1,0 +1,37 @@
+.header-container {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  line-height: 64px;
+}
+.logo-content {
+  width: 210px;
+  color: #fff;
+  text-align: left;
+  padding-left: 20px;
+}
+.logo-content img {
+  height: 40px;
+  margin: 2px 0;
+}
+.header-nav {
+  flex: 1;
+  text-align: left;
+  padding-left: 20px;
+}
+.header-nav a {
+  margin-right: 20px;
+  color: #fff;
+}
+.header-nav .header-nav-item {
+  color: #f6f6f6;
+}
+.header-nav a.active {
+  color: #fff;
+}
+.user-info {
+  width: 180px;
+  color: #fff;
+  text-align: right;
+  padding-right: 30px;
+}

@@ -1,16 +1,22 @@
-import logo from "./logo.svg"
 import "./App.css"
-
 import { BrowserRouter as Router, Link } from "react-router-dom"
+import { Layout } from "antd"
+import "./index.css"
+import MyHeader from "./components/MyHeader"
+
+const { Header, Content } = Layout
 
 function App() {
   return (
-    <div className='App'>
-      <Router>
-        <Link to='/react'>React应用</Link>
-        <Link to='/vue'>Vue应用</Link>
-      </Router>
-      <div id='container'></div>
+    <div className="App">
+      <Layout>
+        <Header>
+          <MyHeader />
+        </Header>
+        <Content>
+          <div id="container"></div>
+        </Content>
+      </Layout>
     </div>
   )
 }
